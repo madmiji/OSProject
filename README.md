@@ -58,7 +58,7 @@ Team Mates:
 
 1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Linux__.
 2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __2 cores and 4 cores__.
-3. Why must we commit and sync our current work on source control? ***(1 mark)*** __Fill answer here__.
+3. Why must we commit and sync our current work on source control? ***(1 mark)*** __for saving, version control, and collaborations__.
 
 ## Exploring the Terminal
 
@@ -80,7 +80,11 @@ codespace
 
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
-1. Run the command **pwd** . ***(1 mark)*** __/workspaces/OSProject__.
+1. Run the command **pwd** . ***(1 mark)***
+```bash
+@madmiji ➜ /workspaces/OSProject (main) $ pwd
+/workspaces/OSProject
+```
 2. Run the command **cat /etc/passwd** . ***(1 mark)***
 ```bash
 root:x:0:0:root:/root:/bin/bash
@@ -109,14 +113,121 @@ messagebus:x:104:105::/nonexistent:/usr/sbin/nologin
 codespace:x:1000:1000::/home/codespace:/bin/bash
 sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
 ```
-3. Run the command **df** . ***(1 mark)*** __Fill answer here__.
-4. Run the command **du** . ***(1 mark)*** __Fill answer here__.
+3. Run the command **df** . ***(1 mark)***
+```bash
+  @madmiji ➜ /workspaces/OSProject (main) $ df
+Filesystem     1K-blocks     Used Available Use% Mounted on
+overlay         32847680 12152896  19000684  40% /
+tmpfs              65536        0     65536   0% /dev
+shm                65536        0     65536   0% /dev/shm
+/dev/root       30298176 24492668   5789124  81% /vscode
+/dev/loop3      32847680 12152896  19000684  40% /workspaces
+/dev/sda1       46127956      160  43752220   1% /tmp
+```
+4. Run the command **du** . ***(1 mark)***
+```bash
+@madmiji ➜ /workspaces/OSProject (main) $ du
+4       ./.git/branches
+8       ./.git/objects/b3
+8       ./.git/objects/1b
+12      ./.git/objects/83
+8       ./.git/objects/47
+8       ./.git/objects/71
+12      ./.git/objects/62
+8       ./.git/objects/58
+12      ./.git/objects/73
+8       ./.git/objects/d7
+8       ./.git/objects/a6
+8       ./.git/objects/04
+8       ./.git/objects/fd
+12      ./.git/objects/e5
+8       ./.git/objects/41
+8       ./.git/objects/7b
+8       ./.git/objects/24
+8       ./.git/objects/c6
+12      ./.git/objects/3d
+8       ./.git/objects/0b
+12      ./.git/objects/72
+12      ./.git/objects/d2
+8       ./.git/objects/86
+8       ./.git/objects/f3
+8       ./.git/objects/c0
+12      ./.git/objects/1c
+8       ./.git/objects/a4
+12      ./.git/objects/eb
+8       ./.git/objects/ab
+12      ./.git/objects/ff
+12      ./.git/objects/af
+8       ./.git/objects/74
+8       ./.git/objects/96
+12      ./.git/objects/70
+8       ./.git/objects/d8
+8       ./.git/objects/91
+8       ./.git/objects/c3
+8       ./.git/objects/3a
+12      ./.git/objects/17
+12      ./.git/objects/2e
+8       ./.git/objects/0d
+8       ./.git/objects/52
+8       ./.git/objects/19
+12      ./.git/objects/29
+8       ./.git/objects/fc
+8       ./.git/objects/e7
+16      ./.git/objects/fb
+8       ./.git/objects/fa
+12      ./.git/objects/c2
+8       ./.git/objects/4b
+12      ./.git/objects/6e
+12      ./.git/objects/b5
+8       ./.git/objects/49
+8       ./.git/objects/60
+8       ./.git/objects/fe
+8       ./.git/objects/20
+8       ./.git/objects/f6
+8       ./.git/objects/3f
+8       ./.git/objects/a3
+8       ./.git/objects/cd
+8       ./.git/objects/f2
+8       ./.git/objects/b2
+8       ./.git/objects/93
+8       ./.git/objects/81
+16      ./.git/objects/e9
+8       ./.git/objects/cb
+12      ./.git/objects/64
+8       ./.git/objects/b9
+8       ./.git/objects/b6
+8       ./.git/objects/4f
+8       ./.git/objects/4a
+4       ./.git/objects/info
+12      ./.git/objects/6b
+12      ./.git/objects/14
+1828    ./.git/objects/pack
+12      ./.git/objects/44
+2524    ./.git/objects
+8       ./.git/logs/refs/heads
+12      ./.git/logs/refs/remotes/origin
+16      ./.git/logs/refs/remotes
+28      ./.git/logs/refs
+36      ./.git/logs
+68      ./.git/hooks
+4       ./.git/lfs/tmp
+8       ./.git/lfs
+4       ./.git/refs/tags
+8       ./.git/refs/heads
+12      ./.git/refs/remotes/origin
+16      ./.git/refs/remotes
+32      ./.git/refs
+8       ./.git/info
+2712    ./.git
+1972    ./images
+4708  
+```
 5. Run the command **ls** . ***(1 mark)*** __Fill answer here__.
 6. Run the command **ls -asl** . ***(1 mark)*** __Fill answer here__.
 7. Run the command **free -h** . ***(1 mark)*** __Fill answer here__.
 8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** __Fill answer here__.
-9. Run the command **top** and type **q** to quit. ***(1 mark)*** __Fill answer here__.
-10. Run the command **uname -a**. ***(1 mark)*** __Fill answer here__.
+9.  Run the command **top** and type **q** to quit. ***(1 mark)*** __Fill answer here__.
+10.  Run the command **uname -a**. ***(1 mark)*** __Fill answer here__.
 11. What is the available free memory in the system. ***(1 mark)*** __Fill answer here__.
 12. What is the available disk space mounted on /workspace. ***(1 mark)*** __Fill answer here__.
 13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Fill answer here__.
