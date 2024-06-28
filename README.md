@@ -5,9 +5,8 @@ Group Name: __Integriti__.
 Section: __Section 3__. 
 
 Team Mates:
-1. ___Ezhad Eminuddin__ and __matric no__
-2. __Ahmad Tarmizi bin Mohd Radzi__ and ___2019285__
-3. __Fill name__ and __matric no__
+1. __Ezhad Eminuddin__ and __matric no__
+2. __Ahmad Tarmizi bin Mohd Radzi__ and __2019285__
 
 ## Rules
 1. You are allowed to have **3 group** members. *Exception* is allowed **IFF (if and only if)** you are allowed to have 4 group members if you are a **multinational** or a **multigender** group. 
