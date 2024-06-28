@@ -1,12 +1,12 @@
 # OSProject Running Containers for Application Development
 
-Group Name: __Fill your team name__. 
+Group Name: __Integriti__. 
 
-Section: __Fill your class section__. 
+Section: __Section 3__. 
 
 Team Mates:
-1. __Fill name__ and __matric no__
-2. __Fill name__ and __matric no__
+1. ___Ezhad Eminuddin__ and __matric no__
+2. __Ahmad Tarmizi bin Mohd Radzi__ and ___2019285__
 3. __Fill name__ and __matric no__
 
 ## Rules
@@ -24,8 +24,8 @@ Team Mates:
 
 ***Questions:***
 
-1. What is the link of the fork OSProject in your repository. ***(1 mark)*** __Fill answer here__.
-2. How many files and folders are in this repository. ***(1 mark)*** __Fill answer here__.
+1. What is the link of the fork OSProject in your repository. ***(1 mark)*** __https://github.com/madmiji/OSProject__.
+2. How many files and folders are in this repository. ***(1 mark)*** __1 Folders, 7 Files__.
 
 
 ## Exploring github codespaces
@@ -57,8 +57,8 @@ Team Mates:
 
 ***Questions:***
 
-1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Fill answer here__.
-2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __Fill answer here__.
+1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Linux__.
+2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __2 cores and 4 cores__.
 3. Why must we commit and sync our current work on source control? ***(1 mark)*** __Fill answer here__.
 
 ## Exploring the Terminal
