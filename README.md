@@ -87,6 +87,7 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
 ```
 2. Run the command **cat /etc/passwd** . ***(1 mark)***
 ```bash
+@madmiji ➜ /workspaces/OSProject (main) $ cat /etc/passwd
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
 bin:x:2:2:bin:/bin:/usr/sbin/nologin
