@@ -56,9 +56,17 @@ Team Mates:
 
 ***Questions:***
 
-1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Linux__.
-2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __2 cores and 4 cores__.
-3. Why must we commit and sync our current work on source control? ***(1 mark)*** __for saving, version control, and collaborations__.
+1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** 
+
+__Linux__.
+
+2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)***
+
+__2 cores and 4 cores__.
+
+3. Why must we commit and sync our current work on source control? ***(1 mark)***
+  
+  __for saving, version control, and collaborations__.
 
 ## Exploring the Terminal
 
@@ -353,11 +361,15 @@ ___5.3GiB___
 
 13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** 
 
-___asnwer___
+___Linux codespaces-4d9718 6.5.0-1022-azure #23~22.04.1-Ubuntu SMP Thu May  9 17:59:24 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux___
 
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
+14.  What is the difference between **ls** vs **ls -asl**. ***(1 mark)***
+
+__ls: lists all the files and folder in current directory <br>
+ls -asl: lists all the files including hidden files (a), in descending order (s), and combined with the long display format (l)__.
+
+15.  What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
+16.  What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
 17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
 
 ## Running your own container instance.
