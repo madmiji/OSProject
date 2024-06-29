@@ -446,7 +446,7 @@ f65be1987f84   debian    "bash"    19 minutes ago   Exited (137) 18 seconds ago 
    
 2. Can we run two, or three instances of debian linux? . ***(1 mark)***
   
-    __Yes. You can run many instances of Debian Linux concurrently using virtualisation software or containerisation platforms like Docker. __.
+    __Yes. You can run many instances of Debian Linux concurrently using virtualisation software or containerisation platforms like Docker.__.
 
 ## Running your own container with persistent storage
 
