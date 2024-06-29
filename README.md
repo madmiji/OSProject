@@ -368,9 +368,19 @@ ___Linux codespaces-4d9718 6.5.0-1022-azure #23~22.04.1-Ubuntu SMP Thu May  9 17
 __ls: lists all the files and folder in current directory <br>
 ls -asl: lists all the files including hidden files (a), in descending order (s), and combined with the long display format (l)__.
 
-15.  What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-16.  What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
+15.  What is the TLB size of the Virtual CPU. ***(1 mark)***
+    
+__2560 4K pages__.
+
+16.  What is the CPU speed of the Virtual CPU. ***(1 mark)***
+    
+__MHz: 3048.786__.
+     
+17. What is the top running process that consumes the most CPU cycles. ***(1 mark)***
+    
+__Process: node 
+PID: 569
+%CPU: 1.0__.
 
 ## Running your own container instance.
 
