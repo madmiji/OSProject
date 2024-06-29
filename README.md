@@ -5,7 +5,7 @@ Group Name: __Integriti__.
 Section: __Section 3__. 
 
 Team Mates:
-1. __Ezhad Eminuddin__ and __matric no__
+1. __Ezhad Eminuddin bin Karim__ and __2218327__
 2. __Ahmad Tarmizi bin Mohd Radzi__ and __2019285__
 
 ## Rules
