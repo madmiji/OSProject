@@ -478,6 +478,7 @@ sudo chown -R codespace:codespace myroot
 
 ```
 ```bash
+//yes you can change it.
 @ezhad ➜ /workspaces/OSProject/myroot (main) $ ls -l /workspaces/OSProject/myroot
 total 0
 -rw-rw-rw- 1 codespace codespace 0 Jun 30 08:45 helloworld.txt
@@ -507,9 +508,24 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
 ***Questions:***
 
-1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Fill answer here__.
-2. What port is the apache web server running. ***(1 mark)*** __Fill answer here__.
-3. What port is open for http protocol on the host machine? ***(1 mark)*** __Fill answer here__.
+1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)***
+   ```bash
+   @ezhad ➜ /workspaces/OSProject/myroot (main) $ docker exec -it b6cfbda53113 bash
+   root@b6cfbda53113:/usr/local/apache2# ls -ld /usr/local/apache2/htdocs
+   drwxr-xr-x+ 2 root root 4096 Jun 30 08:59 /usr/local/apache2/htdocs
+   permission: drwxr-xr-x+ 2
+   user ID: root
+   group ID: root
+   ```
+2. What port is the apache web server running. ***(1 mark)***
+   ```bash
+   Port 80
+   ```
+3. What port is open for http protocol on the host machine? ***(1 mark)***
+   ```bash
+   Port 8080
+   ```
+   
 
 ## Create SUB Networks
 
