@@ -469,7 +469,7 @@ At the terminal, create a new directory called **myroot**, and run a instance of
    ```bash
    @ezhad ➜ /workspaces/OSProject/myroot (main) $ ls -l /workspaces/OSProject/myroot
    total 0
-    -rw-rw-rw- 1 root root 0 Jun 30 08:45 helloworld.txt
+    -rw-rw-rw- 1 root root 0 Jun 30 13:44 helloworld.txt
    ```
 2. Can you change the permission of the files to user codespace.  You will need this to be able to commit and get points for this question. ***(2 mark)***
 ```bash
