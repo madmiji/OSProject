@@ -467,6 +467,7 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 
 1. Check the permission of the files created in myroot, what user and group is the files created in docker container on the host virtual machine? . ***(2 mark)***
    ```bash
+   @ezhad ➜ /workspaces/OSProject/myroot (main) $ ls -l /workspaces/OSProject/myroot
    total 0
     -rw-rw-rw- 1 root root 0 Jun 30 08:45 helloworld.txt
    ```
@@ -476,7 +477,11 @@ At the terminal, create a new directory called **myroot**, and run a instance of
 sudo chown -R codespace:codespace myroot
 
 ```
-*** __Fill answer here__.***
+```bash
+@ezhad ➜ /workspaces/OSProject/myroot (main) $ ls -l /workspaces/OSProject/myroot
+total 0
+-rw-rw-rw- 1 codespace codespace 0 Jun 30 08:45 helloworld.txt
+```
 
 ## You are on your own, create your own static webpage
 
