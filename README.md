@@ -569,6 +569,7 @@ gateway rednet: 172.19.0.1
 ```
 6. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)***
 ```bash
+No.
 @ezhad ➜ /workspaces/OSProject (main) $ docker exec c1 ping c2
 ping: bad address 'c2'
 ```
@@ -582,9 +583,30 @@ docker exec c1 ping c2
 ```
 ***Questions:***
 
-1. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
-2. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
-
+1. Are you able to ping? Show your output . ***(1 mark)***
+```bash
+Yes
+@ezhad ➜ /workspaces/OSProject (main) $ docker exec c1 ping c2
+PING c2 (172.20.0.3): 56 data bytes
+64 bytes from 172.20.0.3: seq=0 ttl=64 time=0.197 ms
+64 bytes from 172.20.0.3: seq=1 ttl=64 time=0.089 ms
+64 bytes from 172.20.0.3: seq=2 ttl=64 time=0.084 ms
+64 bytes from 172.20.0.3: seq=3 ttl=64 time=0.070 ms
+64 bytes from 172.20.0.3: seq=4 ttl=64 time=0.088 ms
+64 bytes from 172.20.0.3: seq=5 ttl=64 time=0.079 ms
+64 bytes from 172.20.0.3: seq=6 ttl=64 time=0.088 ms
+64 bytes from 172.20.0.3: seq=7 ttl=64 time=0.069 ms
+64 bytes from 172.20.0.3: seq=8 ttl=64 time=0.072 ms
+64 bytes from 172.20.0.3: seq=9 ttl=64 time=0.066 ms
+64 bytes from 172.20.0.3: seq=10 ttl=64 time=0.083 ms
+64 bytes from 172.20.0.3: seq=11 ttl=64 time=0.073 ms
+64 bytes from 172.20.0.3: seq=12 ttl=64 time=0.093 ms
+64 bytes from 172.20.0.3: seq=13 ttl=64 time=0.068 ms
+```
+2. What is different from the previous ping in the section above? ***(1 mark)*** 
+```bash
+Containers c1 and c2 have successfully connected to the bridgenet network, which is different from the prior ping attempt in the section above. Pinging c2 from c1 was impossible in the previous since the containers were not linked to the same network. 
+```
 ## Intermediate Level (10 marks bonus)
 
 ### Node.js and MySQL in Docker Containers
