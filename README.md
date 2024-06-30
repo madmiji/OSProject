@@ -479,9 +479,11 @@ sudo chown -R codespace:codespace myroot
 ```
 ```bash
 //yes you can change it.
+@ezhad ➜ /workspaces/OSProject/myroot (main) $ sudo chown -R codespace:codespace /workspaces/O
+SProject/myroot
 @ezhad ➜ /workspaces/OSProject/myroot (main) $ ls -l /workspaces/OSProject/myroot
 total 0
--rw-rw-rw- 1 codespace codespace 0 Jun 30 08:45 helloworld.txt
+-rw-rw-rw- 1 codespace codespace 0 Jun 30 13:44 helloworld.txt
 ```
 
 ## You are on your own, create your own static webpage
