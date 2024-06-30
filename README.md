@@ -512,11 +512,11 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
 1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)***
    ```bash
-   @ezhad ➜ /workspaces/OSProject/myroot (main) $ docker exec -it b6cfbda53113 bash
-   root@b6cfbda53113:/usr/local/apache2# ls -ld /usr/local/apache2/htdocs
-   drwxr-xr-x+ 2 root root 4096 Jun 30 08:59 /usr/local/apache2/htdocs
-   permission: drwxr-xr-x+ 2
-   user ID: root
+   @ezhad ➜ /workspaces/OSProject/myroot (main) $ docker exec -it 68a33c9c89c7 bash
+   root@68a33c9c89c7:/usr/local/apache2# ls -ld /usr/local/apache2/htdocs
+   drwxrwxrwx+ 2 1000 root 4096 Jun 30 13:17 /usr/local/apache2/htdocs
+   permission: drwxrwxrwx+
+   user ID: 1000
    group ID: root
    ```
 2. What port is the apache web server running. ***(1 mark)***
@@ -555,11 +555,11 @@ Busybox : Software suite that provides several Unix utilities in a single execut
    ```bash
    @ezhad ➜ /workspaces/OSProject (main) $ docker network ls
     NETWORK ID     NAME      DRIVER    SCOPE
-    115817d9d152   bluenet   bridge    local
-    ab65a87e1d27   bridge    bridge    local
-    6fd5040c6c65   host      host      local
-    336ad3bc5edf   none      null      local
-    643c1c10ab3f   rednet    bridge    local
+    9f8788401f1c   bluenet   bridge    local
+    0a65daf44a96   bridge    bridge    local
+    f60a6bd13092   host      host      local
+    c5ab2642aca0   none      null      local
+    fd76b8d76476   rednet    bridge    local
    ```
 3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)***
  gateway bluenet: 172.18.0.1
@@ -567,7 +567,7 @@ gateway rednet: 172.19.0.1
 5. What is the network address for the running container c1 and c2? ***(1 mark)***
  ```bash  
    c1: 172.18.0.2
-   c2: 172.19.0.2
+   c2: 172.20.0.3
 ```
 6. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)***
 ```bash
@@ -750,10 +750,19 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 
 ***Questions:***
 
-1. What is the output of step 5 above, explain the error? ***(1 mark)*** __Fill answer here__.
-2. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
+1. What is the output of step 5 above, explain the error? ***(1 mark)***
+```bash
+@ezhad ➜ /workspaces/OSProject/myroot/nodejs-app (main) $ curl http://localhost:3000/random
+Node.js cannot connect to the database. Containers: nodejsnet and mysqlnet are on separate Docker networks thus they cannot communicate with each other directly.
 
-
+ERROR : We do not connect those containers to bridgenet
+```
+   
+2. Show the instruction needed to make this work. ***(1 mark)***
+```bash
+@ezhad ➜ /workspaces/OSProject/myroot/nodejs-app (main) $ docker network connect     bridgenet mysql-container 
+@ezhad ➜ /workspaces/OSProject/myroot/nodejs-app (main) $ docker network connect bridgenet nodejs-container 
+```
 
 ## What to submit
 
