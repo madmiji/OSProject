@@ -587,22 +587,24 @@ docker exec c1 ping c2
 1. Are you able to ping? Show your output . ***(1 mark)***
 ```bash
 Yes
-@ezhad ➜ /workspaces/OSProject (main) $ docker exec c1 ping c2
+@madmiji ➜ /workspaces/OSProject (main) $ docker exec c1 ping c2
 PING c2 (172.20.0.3): 56 data bytes
-64 bytes from 172.20.0.3: seq=0 ttl=64 time=0.197 ms
-64 bytes from 172.20.0.3: seq=1 ttl=64 time=0.089 ms
-64 bytes from 172.20.0.3: seq=2 ttl=64 time=0.084 ms
-64 bytes from 172.20.0.3: seq=3 ttl=64 time=0.070 ms
-64 bytes from 172.20.0.3: seq=4 ttl=64 time=0.088 ms
-64 bytes from 172.20.0.3: seq=5 ttl=64 time=0.079 ms
-64 bytes from 172.20.0.3: seq=6 ttl=64 time=0.088 ms
-64 bytes from 172.20.0.3: seq=7 ttl=64 time=0.069 ms
-64 bytes from 172.20.0.3: seq=8 ttl=64 time=0.072 ms
-64 bytes from 172.20.0.3: seq=9 ttl=64 time=0.066 ms
-64 bytes from 172.20.0.3: seq=10 ttl=64 time=0.083 ms
-64 bytes from 172.20.0.3: seq=11 ttl=64 time=0.073 ms
-64 bytes from 172.20.0.3: seq=12 ttl=64 time=0.093 ms
-64 bytes from 172.20.0.3: seq=13 ttl=64 time=0.068 ms
+64 bytes from 172.20.0.3: seq=0 ttl=64 time=0.071 ms
+64 bytes from 172.20.0.3: seq=1 ttl=64 time=0.071 ms
+64 bytes from 172.20.0.3: seq=2 ttl=64 time=0.104 ms
+64 bytes from 172.20.0.3: seq=3 ttl=64 time=0.086 ms
+64 bytes from 172.20.0.3: seq=4 ttl=64 time=0.086 ms
+64 bytes from 172.20.0.3: seq=5 ttl=64 time=0.067 ms
+64 bytes from 172.20.0.3: seq=6 ttl=64 time=0.072 ms
+64 bytes from 172.20.0.3: seq=7 ttl=64 time=0.070 ms
+64 bytes from 172.20.0.3: seq=8 ttl=64 time=0.075 ms
+64 bytes from 172.20.0.3: seq=9 ttl=64 time=0.069 ms
+64 bytes from 172.20.0.3: seq=10 ttl=64 time=0.072 ms
+64 bytes from 172.20.0.3: seq=11 ttl=64 time=0.065 ms
+64 bytes from 172.20.0.3: seq=12 ttl=64 time=0.067 ms
+64 bytes from 172.20.0.3: seq=13 ttl=64 time=0.078 ms
+64 bytes from 172.20.0.3: seq=14 ttl=64 time=0.083 ms
+64 bytes from 172.20.0.3: seq=15 ttl=64 time=0.084 ms
 ```
 2. What is different from the previous ping in the section above? ***(1 mark)*** 
 ```bash
